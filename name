@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>header</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/01.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/haha.js"></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <div class="lala">
+        <div class="hehe row">
+    <div class="heard col-md-8">
+        
+        <ul class="nav nav-pills">
+            <li class="nav-item lili"><div class="dropdown">
+                    <img src="img/logo.png" alt="" style="height: 42px;">
+                <button type="button" data-toggle="dropdown" class="btn btn-light">男人</button>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a class="dropdown-header" style="font-size: 20px;font-weight: bold;color: #000;">新品上架<sup style="color:red">NEW</sup></a></li>
+                        <li><a href="#" class="dropdown-item" style="font-size: 17px;font-weight: bold">鞋类</a></li>
+                        <li><a href="#" class="dropdown-item" style="font-size: 17px;font-weight: bold">服饰类</a></li>
+                        <li><a href="#" class="dropdown-item" style="font-size: 17px;font-weight: bold">配件装备类</a></li>
+                        <li><a href="#" class="dropdown-item" style="font-size: 17px;font-weight: bold">运动系列</a></li>
+                    </ul>
+                    <ul>
+                            <li><h5 class="dropdown-header" style="font-size: 20px;font-weight: bold;color: #000;">SALE</h5></li>
+                            <li><a href="#" class="dropdown-item" style="font-size: 15px;">运动休闲鞋</a></li>
+                            <li><a href="#" class="dropdown-item" style="font-size: 15px;">短袖上衣</a></li>
+                            <li><a href="#" class="dropdown-item" style="font-size: 15px;">双肩包&肩包</a></li>
+                            <li><a href="#" class="dropdown-item" style="font-size: 15px;">运动休闲Sportstyle</a></li>
+                        </ul>
+                        <ul>
+                                <li><h5 class="dropdown-header" style="font-size: 20px;font-weight: bold;color: #000;">SELECT</h5></li>
+                                <li><a href="#" class="dropdown-item" style="font-size: 15px;">跑步鞋</a></li>
+                                <li><a href="#" class="dropdown-item" style="font-size: 15px;">长袖上衣</a></li>
+                                <li><a href="#" class="dropdown-item" style="font-size: 15px;">健身包&手提运动包</a></li>
+                                <li><a href="#" class="dropdown-item" style="font-size: 15px;">基础蜥类Fundamenatal</a></li>
+                            </ul>
+                            <ul>
+                                    <li><a class="dropdown-header" style="font-size: 20px;font-weight: bold;color: #000;">最新系列</a></li>
+                                    <li><a href="#" class="dropdown-item">双肩包&肩包</a></li>
+                                </ul>
+                    </div>
+                </div></li>
+            <li class="nav-item"><div class="dropdown">
+                <button type="button" data-toggle="dropdown" class="btn btn-light"><a href="nvren.html">女人</a></button>
+                <div class="dropdown-menu">
+                    <h5 class="dropdown-header">下拉菜单标题</h5>
+                    <a href="#" class="dropdown-item active">link item1</a>
+                    <a href="#" class="dropdown-item disabled">link item2</a>
+                </div>
+            </div></li>
+            <li class="nav-item"><div class="dropdown">
+                <button type="button" data-toggle="dropdown" class="btn btn-light">儿童</button>
+                <div class="dropdown-menu">
+                    <h5 class="dropdown-header">下拉菜单标题</h5>
+                    <a href="#" class="dropdown-item active">link item1</a>
+                    <a href="#" class="dropdown-item disabled">link item2</a>
+                </div>
+            </div></li>
+            <li class="nav-item"><div class="dropdown">
+                <button type="button" data-toggle="dropdown" class="btn btn-light">运动</button>
+                <div class="dropdown-menu">
+                    <h5 class="dropdown-header">下拉菜单标题</h5>
+                    <a href="#" class="dropdown-item active">link item1</a>
+                    <a href="#" class="dropdown-item disabled">link item2</a>
+                </div>
+            </div></li>
+            <li class="nav-item"><div class="dropdown">
+                <button type="button" data-toggle="dropdown" class="btn btn-light">SELECT</button>
+                <div class="dropdown-menu">
+                    <h5 class="dropdown-header">下拉菜单标题</h5>
+                    <a href="#" class="dropdown-item active">link item1</a>
+                    <a href="#" class="dropdown-item disabled">link item2</a>
+                </div>
+            </div></li>
+            <li class="nav-item"><div class="dropdown">
+                <button type="button" data-toggle="dropdown" class="btn btn-light">新品</button>
+                <div class="dropdown-menu">
+                    <h5 class="dropdown-header">下拉菜单标题</h5>
+                    <a href="#" class="dropdown-item active">link item1</a>
+                    <a href="#" class="dropdown-item disabled">link item2</a>
+                </div>
+            </div></li>
+            <li class="nav-item"><div class="dropdown">
+                <button type="button" data-toggle="dropdown" class="btn btn-light" style="color:red">SALE</button>
+                <div class="dropdown-menu">
+                    <h5 class="dropdown-header">下拉菜单标题</h5>
+                    <a href="#" class="dropdown-item active">link item1</a>
+                    <a href="#" class="dropdown-item disabled">link item2</a>
+                </div>
+            </div></li>
+        </ul>
+    </div>
+        <div class="haha col-md-4">
+            <ul>
+                <li> <a href="" style="color:red" class="hongzi"><span>   在线客服</span>&nbsp;&nbsp;<img src="img/xiaoxi.png" alt=""></a></li>
+                <li><input type="text" placeholder="我要查找....." class="uname1"/><img src="img/kuangkuang.png" style="height: 32px;" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    
+    </div>
+    <script src="js/haha.js">
+        
+    </script>
+    <div class="box">
+        <ul class="xinjiang">
+            <li>受上海进博会影响，即日起至11月11日期间上海地区的快件将会出现1日延误，敬请谅解！</li>
+            <li>新疆及西藏地区默认仅发EMS，目前无法提供更改及转寄服务。给您带来不便敬请谅解！</li>
+            <li>即日起本店将仅为您提供增值税普通电子发票，电子发票与纸质发票具备同等报销功能与法律效力。</li>
+            <li>欢迎来到PUMA中国官方商城 即日起至11月10日，任意消费满399享全场包邮。</li>
+            <li>新疆及西藏地区默认仅发EMS，目前无法提供更改及转寄服务。给您带来不便敬请谅解！</li>
+            <li>受上海进博会影响，即日起至11月11日期间上海地区的快件将会出现1日延误，敬请谅解！</li>
+            <li>新疆及西藏地区默认仅发EMS，目前无法提供更改及转寄服务。给您带来不便敬请谅解！</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

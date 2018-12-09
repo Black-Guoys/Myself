@@ -1,0 +1,46 @@
+<!--pages/home/home.wxml-->
+<!--轮播图-->
+<view class='lunbo'>
+    <swiper autoplay='true' interval='2500' indicator-dots>
+      <block wx:for="{{list}}" wx:key="item.id">
+        <swiper-item>
+            <image src='{{item.img_url}}' lazy-load mode='aspectFill'></image>
+        </swiper-item>
+       </block>
+    </swiper>
+</view>
+
+<!--九宫格  东部联盟-->
+<view class='dongbubeijing'>
+<button bindtap='dongbulianmeng'>
+    <image src='https://china.nba.com/media/img/western_logo.png' mode='aspectFill' lazy-load class='dongbu'></image>
+    <text class='dongbu1'>西部联盟</text>
+    </button>
+</view>
+<view class='index-nav'>
+    <block wx:for="{{navitems1}}" wx:key="item.id">
+        <view class='nav-item'>
+            <image src='{{item.img_url}}' mode='aspectFill' lazy-load bindtap='handlehuojian' data-id="{{item.id}}"></image>
+            <text>{{item.title}}</text>
+        </view>
+    
+    </block>
+</view>
+
+<!--九宫格  西部联盟-->
+<view class='dongbubeijing'>
+    <button bindtap='xibulianmeng'>
+        <image src='https://china.nba.com/media/img/eastern_logo.png' mode='aspectFill' lazy-load class='dongbu'></image>
+        <text class='dongbu1'>东部联盟</text>
+    </button>
+</view>
+<view class='index-nav'>
+    <block wx:for="{{navitems}}" wx:key="item.id">
+        <view class='nav-item'>
+            <image src='{{item.img_url}}' mode='aspectFill' lazy-load></image>
+            <text>{{item.title}}</text>
+        </view>
+    
+    </block>
+</view>
+

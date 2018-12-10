@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title></title>
+</head>
+<body>
+  <div class="container">
+    <h1>卡片</h1>
+      <div class="card">
+          <div class="card-header">这个卡片的头部</div>
+          <div class="card-body">这个卡的主体内容</div>
+          <div class="card-footer">这个卡片的底部</div>
+      </div>
+
+      <h1>卡片+折叠：手风琴</h1>
+      <div id="acco">
+          <!--card1-->
+          <div class="card">
+              <div class="card-header">
+                  <a href="#one" class="card-link" data-toggle="collapse">选项内容1</a>
+              </div>
+              <div id="one" class="collapse" data-parent="#acco">
+                  <div class="card-body">
+                      <p>内容1：好好学习天天向上</p>
+                      <p>内容1：好好学习天天向上</p>
+                      <p>内容1：好好学习天天向上</p>
+                  </div>
+              </div>
+          </div>
+          <!--card2-->
+          <div class="card">
+              <div class="card-header">
+                  <a href="#two" class="card-link" data-toggle="collapse">选项内容2</a>
+              </div>
+              <div id="two" class="collapse" data-parent="#acco">
+                  <div class="card-body">
+                      内容2:学的不仅仅是技术而是梦想
+                  </div>
+              </div>
+          </div>
+          <!--card3-->
+          <div class="card">
+              <div class="card-header">
+                  <a href="#three" class="card-link" data-toggle="collapse">选项内容3</a>
+              </div>
+              <div id="three" class="collapse" data-parent="#acco">
+                  <div class="card-body">
+                      内容3:三人行必有我师！
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+</html>

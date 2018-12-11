@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title></title>
+</head>
+<body>
+  <div class="container">
+      <h1>水平导航</h1>
+      <ul class="nav justify-content-center nav-justified">
+          <li class="nav-item"><a href="#" class="nav-link">Link item1 </a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Link2</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Link3</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Link4</a></li>
+      </ul>
+
+      <h1>选项卡导航</h1>
+      <ul class="nav nav-tabs">
+          <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#one">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#two">Menu1</a>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link" data-toggle="tab" href="#three">Menu2</a>
+          </li>
+      </ul>
+      <div class="tab-content">
+          <div class="tab-pane active" id="one">第一个标签页对应的内容 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum est iste quaerat quo rem sed? Ad amet doloribus est eveniet impedit, itaque iusto maxime natus, necessitatibus nulla, perferendis praesentium voluptas!</div>
+          <div class="tab-pane" id="two">第二个标签页对应的内容aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+          <div class="tab-pane" id="three">第三个标签页对应的内容</div>
+      </div>
+
+      <h1>胶囊导航</h1>
+      <ul class="nav nav-pills">
+          <li class="nav-item"><a class="nav-link active" href="#NO1" data-toggle="pill">Bootstrap</a></li>
+          <li class="nav-item"><a href="#NO2" class="nav-link" data-toggle="pill">HTML5</a></li>
+          <li class="nav-item"><a href="#NO3" class="nav-link" data-toggle="pill">CSS3</a></li>
+      </ul>
+      <!--要切换的内容-->
+      <div class="tab-content">
+          <div class="tab-pane active" id="NO1">胶囊1的内容：aaaaaaaaaaaa</div>
+          <div class="tab-pane" id="NO2">胶囊2的内容：bbbbbbbbbbbb</div>
+          <div class="tab-pane" id="NO3">胶囊3的内容：cccccccccccc</div>
+      </div>
+  </div>
+</body>
+</html>

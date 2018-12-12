@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>footer</title>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/laa.css"/>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js "></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/haha.js"></script>
+    </head>
+<body>
+    <div id="content">
+        <ul class="bar">
+            <li>
+                <a>
+                    <div class="forward">
+                        <img src="img/13.jpg">
+                    </div>
+                    <div class="tips">
+                        <p>日本漫画家岸本齐史作品《火影忍者》中男主角。因为身上封印着邪恶的九尾妖狐，无父无母的他受尽了村人的冷眼与歧视，他下定决心要成为第六代火影，让所有人都认同他的存在。</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+               <a>
+                    <div class="forward">
+                        <img src="img/14.jpg">
+                    </div>
+                    <div class="tips">
+                        <p>日本漫画家岸本齐史作品《火影忍者》中男主角。因为身上封印着邪恶的九尾妖狐，无父无母的他受尽了村人的冷眼与歧视，他下定决心要成为第六代火影，让所有人都认同他的存在。</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div class="forward">
+                        <img src="img/17.jpg">
+                    </div>
+                    <div class="tips">
+                        <p>日本漫画家岸本齐史作品《火影忍者》中男主角。因为身上封印着邪恶的九尾妖狐，无父无母的他受尽了村人的冷眼与歧视，他下定决心要成为第六代火影，让所有人都认同他的存在。</p>
+                    </div>
+                </a>
+            </li>
+            
+            <li>
+                <a>
+                    <div class="forward">
+                        <img src="img/16.jpg">
+                    </div>
+                    <div class="tips">
+                        <p>日本漫画家岸本齐史作品《火影忍者》中男主角。因为身上封印着邪恶的九尾妖狐，无父无母的他受尽了村人的冷眼与歧视，他下定决心要成为第六代火影，让所有人都认同他的存在。</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/haha.js"></script> <!--我们自己写的js-->
+<link rel="stylesheet" href="laa.css">
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link rel="stylesheet" href="css/zzsc.css" type="text/css" media="screen" charset="gb2312" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<title>jQuery动态缩放焦点图代码 - 非凡图库</title>
+<base target="_blank">
+</head>
+<body><br />
+<!-- 代码 开始 -->
+<div class="sec bnspic">
+	<div class="big_pic">
+		<ul>
+		<li class="on"><a href="http://www.ffpic.com"><img src="images/ookamikodomo.jpg" title="狼之子雨与雪" /><span class="txt">细田守《狼之子雨与雪》狼孩子的伟大母亲</span></a></li>
+		<li><a href="http://www.ffpic.com"><img src="images/hotarubi.jpg" title="萤火之森" /><span class="txt">绿川幸《萤火之森》——凄美伤感的半人半妖与人类之恋</span></a></li>
+		<li><a href="http://www.ffpic.com"><img src="images/tsuioku.jpg" title="对某个飞行员的追忆" /><span class="txt">犬村小六《对某个飞行员的追忆》——相爱不能相守的空战罗曼剧</span></a></li>
+		<li><a href="http://www.ffpic.com"><img src="images/tokikake.jpg" title="穿越时空的少女" /><span class="txt">细田守《穿越时空的少女》——在未来等你</span></a></li>
+		<li><a href="http://www.ffpic.com"><img src="images/aura.jpg" title="AURA 魔龙院光牙最后的战斗" /><span class="txt">田中罗密欧《AURA 魔龙院光牙最后的战斗》——中二先驱妄想战士</span></a></li>
+		<li><a href="http://www.ffpic.com"><img src="images/neragaku.jpg" title="被狙击的学园" /><span class="txt">眉村卓《被狙击的学园》——穿越时间的警示</span></a></li>
+		</ul>
+	</div><!-- /big_pic -->
+	<div class="small_pic clearfix">
+		<ul>
+			<li class="on"><a href="http://www.ffpic.com"><img src="images/ookamikodomo_.jpg" alt="图片说明" /></a></li>
+			<li><a href="http://www.ffpic.com"><img src="images/hotarubi_.jpg" alt="图片说明" /></a></li>
+			<li><a href="http://www.ffpic.com"><img src="images/tsuioku_.jpg" alt="图片说明" /></a></li>
+			<li><a href="http://www.ffpic.com"><img src="images/tokikake_.jpg" alt="图片说明" /></a></li>
+			<li><a href="http://www.ffpic.com"><img src="images/aura_.jpg" alt="图片说明" /></a></li>
+			<li><a href="http://www.ffpic.com"><img src="images/neragaku_.jpg" alt="图片说明" /></a></li>
+		</ul>
+	</div><!-- /small_pic -->
+</div>
+<script>
+	$(".small_pic li").mouseover(function(){
+		$(this).siblings().removeClass("on");
+		$(this).addClass("on");
+		var preNumber=$(this).prevAll().size()+1;
+		$(".big_pic li").removeClass("on");
+		$(".big_pic li:nth-child("+preNumber+")").addClass("on");
+	});
+</script>
+<!-- 代码 结束 --><div class="clear"></div>
+<div style="text-align:center;margin:20px 0">
+<p>适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. </p>
+<p>来源：<a href="http://www.ffpic.com/" target="_blank">非凡图库</a></p>
+<p style="margin:20px 0"></p>
+</div>
+<style>
+/* 非必要样式 */
+.sec{margin-left:auto;margin-right:auto;width:1000px;}
+</style>
+<div style="display:none"><script src="http://s24.cnzz.com/stat.php?id=4273731&web_id=4273731" language="JavaScript"></script><script src="http://s20.cnzz.com/stat.php?id=5240441&web_id=5240441" language="JavaScript"></script>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Faca36f9d36d03a04d61c93f28c896386' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+</body>
+</html>

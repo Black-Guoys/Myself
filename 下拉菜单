@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>...</title>
+  <style>
+		.dropdown{width:64px; height:20px;}
+    .dropdown a{
+			text-decoration:none; 
+			color:#000;
+			display:inline-block;
+		}
+		.dropdown>a{ 
+			border:1px solid #000; padding:6px 12px;
+		}
+		.dropdown-menu{
+			width:200px;
+			list-style:none; margin:0; padding:0;
+			border:1px solid #aaa;
+			box-shadow:5px 5px 6px #000;
+		}
+		.dropdown-menu a{padding:6px 20px; width:160px}
+		.dropdown-menu li:hover{background:#ddd}
+  </style>
+ </head>
+  
+ <body>
+  <h1>下拉菜单</h1>
+  <div class="dropdown">
+    <a data-trigger="dropdown" href="#">Dropdown</a>
+    <ul class="dropdown-menu" style="display:none">
+	    <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+	    <li><hr></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script>
+		//先实现单击按钮下拉
+		/*$("[data-trigger=dropdown]").on("click",function(){
+			var $btn=$(this);
+			var $menu=$btn.next()//.nextElementSibling
+		//如果$menu 是  隐藏的
+			if($menu.is(":hidden"))
+				$menu.show()//.css("display","block")
+			else
+				$menu.hide()//.css("display","none")
+		})*/
+		//再实现鼠标移入下拉
+		$("[data-trigger=dropdown]")
+		.parent()
+		.on("mouseover",function(){
+			$(this).children().last().show()
+		})
+		//return parent div
+		.on("mouseout",function(){
+			$(this).children().last().hide()
+		})
+	</script>
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    .btn {
+      padding: 5px 10px;
+      border-radius: 3px;
+      border: 1px solid #aaa;
+      outline: none;
+    }
+    .up {
+      background: #fff;
+      color: #333;
+    }
+    .down {
+      background: #ddd;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="btn up">双态按钮</button>
+
+
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+  //双态按钮: 让按钮的class在up和down之间切换
+  $("button").on("click",function(){
+    var $btn=$(this);
+    /*if($btn.hasClass("down"))
+      $btn.removeClass("down")
+    else
+      $btn.addClass("down")*/
+    $btn.toggleClass("down")
+  })
+</script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    body{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<h1>替换节点</h1>
+
+<div id="chosen">
+  <img src="img/p0.png">
+</div>
+<hr/>
+<div id="list">
+  <img src="img/p3.png">
+  <img src="img/p4.png">
+  <img src="img/p5.png">
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+  $("#list>img").on("click",function(){
+    //$(this).clone().replaceAll("#chosen>img")
+    $("#chosen>img").replaceWith($(this).clone())
+  })
+</script>
+</body>
+</html>

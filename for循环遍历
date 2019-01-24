@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //遍历
+        // var arr=[10,20,30,40,50,44,55,66];
+        // for(var i=0;i<arr.length;i++){
+        //     console.log(arr[i])
+        // }
+    //求所有元素和
+        // var arr=[10,20,30,40,50];
+        // var sum=0;
+        // for(var i=0;i<arr.length;i++){
+        //     sum+=arr[i];
+        // }
+        // console.log(sum)
+    //平均值
+        // var arr=[10,20,30,40,50];
+        // var sum=0;
+        // for(var i=0;i<arr.length;i++){
+        //     sum+=arr[i];
+        // }
+        // console.log(sum/arr.length)
+    //最大值
+        // var arr=[1,20,30,140,50,200,1,210];
+        // //假设max中存储最大值
+        // var max=arr[0];
+        // for(var i=0;i<arr.length;i++){
+        //     if(max<arr[i]){
+        //         max=arr[i]
+        //     }
+        // }
+        // console.log(max)
+    //最小值
+            // var arr=[10,20,30,3,40,1,90,50,-2];
+            // var min=arr[0];
+            // for(var i=0;i<arr.length;i++){
+            //     if(min>arr[i]){
+            //         min=arr[i]
+            //     }
+            // }
+            // console.log("最小值:"+min)
+    //遍历 倒叙
+        // var arr=[10,20,30,40,50];
+        // for(var i=arr.length-1;i>=0;i--){
+        //     console.log(arr[i])
+        // }
+    //把数组中每一个元素用|拼接到一起产生一个字符串输出
+        var names=["哈哈","结婚的","到家","觉得","钱","孙","周"]
+        var str="";
+        for(var i=1;i<names.length;i++){
+           str+="|"+names[i];
+        }
+        console.log(names[0]+str)
+</script>
+</body>
+</html>

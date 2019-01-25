@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //冒泡排序：把所有数据按照一定顺序排列
+        var arr=[20,3,20,4,100,50];
+        //循环控制比较的次数
+        for(var i=0;i<arr.length;i++){
+            //控制比较每一轮比较的次数
+            for(var j=0;j<arr.length-1-i;j++){
+                if(arr[j]<arr[j+1]){
+                    var temp=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+                }
+            }
+        }
+        console.log(arr)
+    </script>
+</body>
+</html>

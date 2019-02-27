@@ -1,0 +1,38 @@
+<div>
+    <img src="http://www.jq22.com/img/cs/500x500-1.png">
+    <img src="http://www.jq22.com/img/cs/500x500-2.png">
+    <img src="http://www.jq22.com/img/cs/500x500-3.png">
+    <img src="http://www.jq22.com/img/cs/500x500-4.png">
+    <img src="http://www.jq22.com/img/cs/500x500-5.png">
+    <img src="http://www.jq22.com/img/cs/500x500-6.png">
+    <img src="http://www.jq22.com/img/cs/500x500-7.png">
+    <img src="http://www.jq22.com/img/cs/500x500-8.png">
+    <img src="http://www.jq22.com/img/cs/500x500-9.png">
+</div>
+
+
+css
+div {
+	width:610px;
+	height:540px;
+	border:1px solid #999;
+	padding-left:10px;
+	background:black;
+}
+img {
+	float:left;
+	width:201px;
+	height:178px;
+}
+
+
+$(function() {
+    $("img").mouseover(function() {
+        $(this).stop(true).fadeTo(100, 1);
+        $(this).siblings().stop(true).fadeTo(100, 0.5);
+        //return false;					
+    })
+    $("div").mouseout(function() {
+        $("img").fadeTo(100, 1);
+    })
+})
